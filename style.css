@@ -1,0 +1,441 @@
+import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/img/bj.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+.display{
+    border: 5px solid black;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: rgb(137, 9, 80);
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: rgb(137, 9, 80);
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+
+
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+/*.card{
+    position: relative;
+    min-width: 130px;
+    height: 180px;
+    border-radius: 8px;
+    margin-right: 10px;
+    background: rgb(176, 168, 168);
+    transition: .3s linear;
+    color:azure;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.cards1{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    }
+
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(assets/img/background2.jpeg);
+
+    }*/
+    /* Add your CSS styles for movies here */
+/* Add your CSS styles for movies here */
+.movie {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    width: 300px; /* Fixed width for each movie */
+}
+
+.movie img {
+    width:50%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.movie h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color:white;
+    }
+    
+    /*.search-side {
+        width: 100%;
+        padding: 20px;
+        background-color: #afa3a8;
+        
+    }*/
+    
+    .results-side {
+        width: 20%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .results-side img {
+        max-width: 100%;
+        height: auto;
+         
+    }
+.part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 380px;
+}
+
+/*.carousel{
+    height: 250px;
+    width: 80%;
+    position: relative;
+}
+
+.carousel .switchLeft,
+.carousel .switchRight{
+    color:beige;
+    font-weight: bold;
+    height: 100%;
+    width: 45px;
+    line-height: 250px;
+    font-size: 25px;
+    text-align: center;
+    background-color: aqua;
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+}
+.carousel .switchLeft{
+    position: absolute;
+    left: -20px;
+    min-height: 250px;
+}
+.carousel .switchRight{
+    position: absolute;
+    right: -50px;
+}*/
+
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /* Ensure the container does not overflow */
+    background-image: url(assets/img/background2.jpeg);
+    
+    
+}
+
+.carousel-box {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable snapping to each item */
+}
+
+.carousel-box img {
+    flex: 0 0 auto; /* Prevent image from growing */
+    width: 180px; /* Adjust according to your preference */
+    margin-right: 10px; /* Adjust according to your preference */
+    scroll-snap-align: center; /* Align items to the center */
+}
+
+/*button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prevBtn {
+    left: 0;
+    background-color: rgb(172, 17, 128);
+}
+
+#nextBtn {
+    right: 0;
+    background-color: rgb(172, 17, 128);
+}
