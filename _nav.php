@@ -23,11 +23,15 @@
                 <a href="/mvs/login.php">
                     <button class="btn btn-red-sm">Login In</button>
                 </a>
+                <a href="/mvs/index.php">
+                    <button class="btn btn-red-sm">SUBSCRIBE</button>
+                </a>
+                
             </div>
-            
-            
         </nav>
+
         <div class="box"></div>
+
         <div class="hero">
             <span>Experience blockbuster movies, popular series, and more starting from just ₹149.</span>
             <span>Join today. Cancel anytime.</span>
@@ -52,6 +56,11 @@
                 </div>
             </div>
         </div>
+
+        <div class="separation"></div>
+
+        
+        
 
         <div class="separation"></div>
 
